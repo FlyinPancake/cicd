@@ -30,6 +30,7 @@ jobs:
       - name: Splint check
         run: |
           splint --compdef --exportlocal simplecalculator.c operations.c
+        working-directory: src
 
   building-and-delivery:
     name: Build and delivery
